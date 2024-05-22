@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+}
+.titleBar {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #00FFFF, #000066);
+  color: white;
+  font-family: Estrangelo Edessa;
+  font-size: 20px;
+  font-weight: bolder;
+  -webkit-app-region:drag;
+}
+
+.windowcontroller{
+  display: flex;
+  -webkit-app-region:no-drag;
+}
+.windowcontroller .winicon{
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 5px 4px 5px;
+}
+.titleBar .icon::before {
+  content: '';
+  width: 22px;
+  height: 26px;
+  background: url(../assets/iconform.png);
+  display: block;
+}
+ /* .winminimize::before {
+  content: '\1F5D5';
+}
+.winmaximize::before {
+  content: '\1F5D6';
+}
+.winclose::before {
+  content: '\2716';
+}
+.winminimize:hover {
+  background:   rgba(255, 255, 255, 0.405);
+}
+
+.winmaximize:hover {
+  background:  rgba(255, 255, 255, 0.405);
+}
+
+.winclose:hover {
+  background:  rgba(255, 255, 255, 0.405);
+}
+*/
+.general-container {
+  align-items: center;
+  display: flex;
+  /*  height: 100vh; */
+  background-color: #FFFF;
+}
+.left-container {
+  width: 45%;
+  height: 90%;
+  padding: 10px;
+}
+.right-container {
+  width: 45%;
+  height: 90%;
+  padding: 10px;
+}
+.options{
+  width: 10%;
+  height: 540px;
+}
+.options .newfile{
+  width: 90px;
+  height: 90px;
+  padding-top: 19px;
+}
+.options .openfile{
+  width: 90px;
+  height: 90px;
+  padding-top: 23px;
+}
+.options .savefile{
+  width: 90px;
+  height: 90px;
+  padding-top: 23px;
+}
+.options .saveasfile{
+  width: 90px;
+  height: 90px;
+  padding-top: 19px;
+}
+.options .about{
+  width: 90px;
+  height: 90px;
+  padding-top: 19px;
+}
+.options .newfile:hover{
+  background: url(../assets/main/iconhover.png);
+}
+.options .openfile:hover{
+  background: url(../assets/main/iconhover.png);
+}
+.options .savefile:hover{
+  background: url(../assets/main/iconhover.png);
+}
+.options .saveasfile:hover{
+  background: url(../assets/main/iconhover.png);
+}
+.options .about:hover{
+  background: url(../assets/main/iconhover.png);
+}
+#intext {
+  resize: none;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+#outtext {
+  resize: none;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}

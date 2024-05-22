@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+  overflow: hidden;
+}
+.bcloseinit{
+  margin-top: 0px;
+  position: relative;
+  margin-right: 5px;
+  -webkit-app-region:no-drag;
+}
+.baboutinit{
+  margin-top: 243px;
+  margin-right: 5px;
+  position: relative;
+  -webkit-app-region:no-drag;
+}
+.boptions{
+  width: 900px;
+  height: 570px;
+  position: absolute;
+  -webkit-app-region:no-drag;
+}
